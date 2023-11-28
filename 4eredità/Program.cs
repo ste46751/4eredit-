@@ -4,6 +4,7 @@ using System.ComponentModel.Design.Serialization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static _4eredità.Program;
 
 namespace _4eredità
 {
@@ -28,15 +29,12 @@ namespace _4eredità
 
             }
         }
-        public class cubo
+        class cubo : quadrato
         {
-            protected double lato;
-
-            public cubo(double lato)
+            public cubo(double _lato) : base(_lato)
             {
-                this.lato = lato;
-            }
 
+            }
             public void SupVolume(double lato)
             {
                 double sup = lato * lato*6;
